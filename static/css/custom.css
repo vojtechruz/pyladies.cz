@@ -293,8 +293,8 @@ nav.main-navbar li.current-page {
 .navbar-cities .city-active-registration {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 70%;
-  color: #ff0;
+  font-size: 85%;
+  color: #f9cfd6;
 }
 @media all and (min-width: 550px) {
     /* On most screens, show the city silhouettes */
@@ -347,15 +347,15 @@ nav.main-navbar li.current-page {
     .navbar-cities {
         /* Gradient with 137px of white on the top, pink bottom */
         background: linear-gradient(180deg,
-                                    white, white 106px,
-                                    #e51f40 106px, #e51f40);
+                                    white, white 103px,
+                                    #e51f40 103px, #e51f40);
     }
 
     .navbar-cities.faded-banner {
         /* Gradient with 137px of white on the top, gray bottom */
         background: linear-gradient(180deg,
-                                    white, white 106px,
-                                    #8e8c8d 106px, #8e8c8d);
+                                    white, white 103px,
+                                    #8e8c8d 103px, #8e8c8d);
     }
     .navbar-cities li {
         padding: 0;
@@ -364,10 +364,10 @@ nav.main-navbar li.current-page {
 
     .navbar-cities .city-active-registration {
       text-transform: uppercase;
-      background: #ff0;
+      background: #f9cfd6;
       color: #330;
       border: 2px solid #fff;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 800;
       -webkit-transform: rotate(-13deg);
               transform: rotate(-13deg);
@@ -383,10 +383,10 @@ nav.main-navbar li.current-page {
     }
 
     .navbar-cities a:hover .city-active-registration {
-      background: #cc0;
+      background: #e0bac0;
     }
     .city-title-box {
-        padding: 0 15px;
+        padding: 0;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -403,7 +403,7 @@ nav.main-navbar li.current-page {
     /* For very big sceens, set a max size */
     .city-title-box {
         height: 88px;
-        padding: 0 15px;
+        padding: 0 5px;
 
     }
     .navbar-cities span.city-title {
@@ -684,11 +684,138 @@ section.contacts div a:hover {
     margin-top: 55px;
 }
 }
+/* Newsletter */
+
+#mc_embed_signup form {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding: 10px 0 10px 3%;
+}
+.newsletter {
+  margin: 0;
+  text-align: center;
+  padding: 0 10px 30px;
+  background: #8e8c8d;
+  color: #fff;
+  width: 100%;
+}
+#mc_embed_signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#mc_embed_signup .button:hover {
+  background-color: #333;
+}
+#mc_embed_signup .mc-field-group {
+  clear: left;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+  min-height: 50px;
+  width: 100%;
+}
+#mce-EMAIL {
+  width: 400px;
+  color: #333;
+}
+#mc_embed_signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#mc_embed_signup .mc-field-group input {
+  display: block;
+  text-indent: 2%;
+  padding: 0px 12px;
+  margin: 10px 5px;
+  width: 100%;
+  text-indent: 2%;
+}
+#mce-responses {
+  font-weight: bold;
+}
+#mc_embed_signup input {
+  border: 1px solid #ABB0B2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#mc_embed_signup .mc-field-group input#mc-embedded-subscribe {
+  width: 100%;
+}
+#mc_embed_signup .clear {
+  clear: both;
+}
+#mc_embed_signup .button {
+  clear: both;
+  border: 0 none;
+  border-radius: 4px;
+  transition: all 0.23s ease-in-out 0s;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: normal;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  background-color: #e51f40;
+  width: 110px;
+}
+#mc_embed_signup #mce-success-response, #mce-success-response {
+  color:white;
+  text-align: center;
+}
+.mce_inline_error {
+  background-color: white;
+  text-align: center;
+}
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+  border: 2px solid #e85c41;
+  text-align: left;
+}
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  margin: 10px 2px;
+  padding: 7px 44px;
+  position: absolute;
+  top: 42px;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: normal;
+  z-index: 1;
+  color: #e51f40;
+}
+#mc_embed_signup a {
+  color: white;
+  text-decoration: underline;
+}
+@media all and (min-width: 500px) {
+  .newsletter p {
+    text-align: center;
+    margin: auto;
+    width: 34%;
+    padding: 10px;
+  }
+  #mc_embed_signup p {
+      text-align: center;
+      margin: auto;
+      width: 100%;
+      padding: 10px;
+  }
+  #mc_embed_signup .mc-field-group input {
+    width: 40%;
+    max-width: 300px;
+  }
+}
+
 /* How it started */
 
-.info-city {
-
-}
 .course-city {
 	padding: 0px 5%;
 }
@@ -764,6 +891,12 @@ h2.course-city-heading {
 	font-size: 24px;
 	margin-top: 15px;
 }
+#alumni .member-name {
+    font-size: 12px;
+}
+#alumni .member-role {
+    font-size: 0.7em;
+}
 
 .member-photo {
     /* Trick: The .member-photo is "empty", and its size is defined
@@ -795,14 +928,27 @@ h2.course-city-heading {
     object-fit: cover;
 }
 
+#alumni {
+    /* Hide alumni on phone devices, as the list can be very long */
+    display: none;
+}
+
 @media all and (min-width:620px) {
   h2.course-city-heading {
     margin: 55px 10px 40px;
   }
 }
 @media all and (min-width:1000px) {
-  .team {
-  	grid-template-columns: repeat(auto-fill, 225px);
+  #team {
+    .team {
+      grid-template-columns: repeat(auto-fill, 225px);
+    }
+  }
+  #alumni {
+    display: block;
+    .team {
+      grid-template-columns: repeat(auto-fill, 100px);
+    }
   }
   h2.course-city-heading {
     margin-top: 70px;
@@ -911,7 +1057,6 @@ body > footer .clear {
   clear: both;
 }
 
-body > footer .global-pyladies a,
 body > footer .about-p a,
 body > footer .news-p a {
   color: #8e8c8d;
@@ -923,11 +1068,11 @@ body > footer .global-pyladies {
   float: left;
 }
 
-body > footer .global-pyladies a {
+body > footer a:hover {
+  text-decoration: underline;
   color: white;
 }
 
-body > footer .global-pyladies a:hover {
-  text-decoration: underline;
+body > footer a {
   color: white;
 }
